@@ -54,8 +54,9 @@ cd your-repo
 ### 2. Setup the Backend (FastAPI)
 ```bash
 cd ServerApp-FastApi
-python -m venv env
-source env/bin/activate  # or env\Scripts\activate on Windows
+python -m venv .venv
+source .venv/bin/activate # on Linux
+.venv\Scripts\activate # on Windows
 pip install -r requirements.txt
 
 # Update .env or use a local settings file for DB credentials
